@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1815E6C20EB102F00607CAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E6B20EB102F00607CAD /* AppDelegate.swift */; };
+		C1815E6E20EB102F00607CAD /* GeometryFighter.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C1815E6D20EB102F00607CAD /* GeometryFighter.scnassets */; };
+		C1815E7020EB102F00607CAD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E6F20EB102F00607CAD /* GameViewController.swift */; };
+		C1815E7320EB102F00607CAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1815E7120EB102F00607CAD /* Main.storyboard */; };
+		C1815E7520EB103000607CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1815E7420EB103000607CAD /* Assets.xcassets */; };
+		C1815E7820EB103000607CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1815E7620EB103000607CAD /* LaunchScreen.storyboard */; };
+		C1815E8320EB103100607CAD /* GeometryFighterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E8220EB103100607CAD /* GeometryFighterTests.swift */; };
+		C1815E8E20EB103100607CAD /* GeometryFighterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E8D20EB103100607CAD /* GeometryFighterUITests.swift */; };
+		C1815E9C20EB123600607CAD /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E9B20EB123600607CAD /* ShapeType.swift */; };
+		C1815EA520EB143500607CAD /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E9E20EB143500607CAD /* Int+Extensions.swift */; };
+		C1815EA620EB143500607CAD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815E9F20EB143500607CAD /* UIColor+Extensions.swift */; };
+		C1815EA720EB143500607CAD /* GameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815EA020EB143500607CAD /* GameHelper.swift */; };
+		C1815EA820EB143500607CAD /* SCNAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815EA120EB143500607CAD /* SCNAction+Extensions.swift */; };
+		C1815EA920EB143500607CAD /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815EA220EB143500607CAD /* Generics.swift */; };
+		C1815EAA20EB143500607CAD /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815EA320EB143500607CAD /* Float+Extensions.swift */; };
+		C1815EAB20EB143500607CAD /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1815EA420EB143500607CAD /* Double+Extensions.swift */; };
+		C1815EAF20EB1CB000607CAD /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = C1815EAD20EB1CB000607CAD /* spark.png */; };
+		C1815EB020EB1CB000607CAD /* Tail.scnp in Resources */ = {isa = PBXBuildFile; fileRef = C1815EAE20EB1CB000607CAD /* Tail.scnp */; };
+		C1815EB220EB23FF00607CAD /* Explode.scnp in Resources */ = {isa = PBXBuildFile; fileRef = C1815EB120EB23FF00607CAD /* Explode.scnp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1815E7F20EB103100607CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1815E6020EB102F00607CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1815E6720EB102F00607CAD;
+			remoteInfo = GeometryFighter;
+		};
+		C1815E8A20EB103100607CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1815E6020EB102F00607CAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1815E6720EB102F00607CAD;
+			remoteInfo = GeometryFighter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1815E6820EB102F00607CAD /* GeometryFighter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryFighter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1815E6B20EB102F00607CAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1815E6D20EB102F00607CAD /* GeometryFighter.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = GeometryFighter.scnassets; sourceTree = "<group>"; };
+		C1815E6F20EB102F00607CAD /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C1815E7220EB102F00607CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1815E7420EB103000607CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1815E7720EB103000607CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1815E7920EB103000607CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1815E7E20EB103100607CAD /* GeometryFighterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometryFighterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1815E8220EB103100607CAD /* GeometryFighterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryFighterTests.swift; sourceTree = "<group>"; };
+		C1815E8420EB103100607CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1815E8920EB103100607CAD /* GeometryFighterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometryFighterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1815E8D20EB103100607CAD /* GeometryFighterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryFighterUITests.swift; sourceTree = "<group>"; };
+		C1815E8F20EB103100607CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1815E9B20EB123600607CAD /* ShapeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
+		C1815E9E20EB143500607CAD /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		C1815E9F20EB143500607CAD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C1815EA020EB143500607CAD /* GameHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameHelper.swift; sourceTree = "<group>"; };
+		C1815EA120EB143500607CAD /* SCNAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNAction+Extensions.swift"; sourceTree = "<group>"; };
+		C1815EA220EB143500607CAD /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		C1815EA320EB143500607CAD /* Float+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
+		C1815EA420EB143500607CAD /* Double+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		C1815EAD20EB1CB000607CAD /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		C1815EAE20EB1CB000607CAD /* Tail.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Tail.scnp; sourceTree = "<group>"; };
+		C1815EB120EB23FF00607CAD /* Explode.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Explode.scnp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1815E6520EB102F00607CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E7B20EB103100607CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E8620EB103100607CAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1815E5F20EB102F00607CAD = {
+			isa = PBXGroup;
+			children = (
+				C1815E6A20EB102F00607CAD /* GeometryFighter */,
+				C1815E8120EB103100607CAD /* GeometryFighterTests */,
+				C1815E8C20EB103100607CAD /* GeometryFighterUITests */,
+				C1815E6920EB102F00607CAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1815E6920EB102F00607CAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1815E6820EB102F00607CAD /* GeometryFighter.app */,
+				C1815E7E20EB103100607CAD /* GeometryFighterTests.xctest */,
+				C1815E8920EB103100607CAD /* GeometryFighterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1815E6A20EB102F00607CAD /* GeometryFighter */ = {
+			isa = PBXGroup;
+			children = (
+				C1815EAC20EB1C6C00607CAD /* Particles */,
+				C1815E9D20EB143500607CAD /* GameUtils */,
+				C1815E6B20EB102F00607CAD /* AppDelegate.swift */,
+				C1815E6D20EB102F00607CAD /* GeometryFighter.scnassets */,
+				C1815E6F20EB102F00607CAD /* GameViewController.swift */,
+				C1815E7120EB102F00607CAD /* Main.storyboard */,
+				C1815E7420EB103000607CAD /* Assets.xcassets */,
+				C1815E7620EB103000607CAD /* LaunchScreen.storyboard */,
+				C1815E7920EB103000607CAD /* Info.plist */,
+				C1815E9B20EB123600607CAD /* ShapeType.swift */,
+			);
+			path = GeometryFighter;
+			sourceTree = "<group>";
+		};
+		C1815E8120EB103100607CAD /* GeometryFighterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1815E8220EB103100607CAD /* GeometryFighterTests.swift */,
+				C1815E8420EB103100607CAD /* Info.plist */,
+			);
+			path = GeometryFighterTests;
+			sourceTree = "<group>";
+		};
+		C1815E8C20EB103100607CAD /* GeometryFighterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1815E8D20EB103100607CAD /* GeometryFighterUITests.swift */,
+				C1815E8F20EB103100607CAD /* Info.plist */,
+			);
+			path = GeometryFighterUITests;
+			sourceTree = "<group>";
+		};
+		C1815E9D20EB143500607CAD /* GameUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C1815E9E20EB143500607CAD /* Int+Extensions.swift */,
+				C1815E9F20EB143500607CAD /* UIColor+Extensions.swift */,
+				C1815EA020EB143500607CAD /* GameHelper.swift */,
+				C1815EA120EB143500607CAD /* SCNAction+Extensions.swift */,
+				C1815EA220EB143500607CAD /* Generics.swift */,
+				C1815EA320EB143500607CAD /* Float+Extensions.swift */,
+				C1815EA420EB143500607CAD /* Double+Extensions.swift */,
+			);
+			path = GameUtils;
+			sourceTree = "<group>";
+		};
+		C1815EAC20EB1C6C00607CAD /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				C1815EAD20EB1CB000607CAD /* spark.png */,
+				C1815EAE20EB1CB000607CAD /* Tail.scnp */,
+				C1815EB120EB23FF00607CAD /* Explode.scnp */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1815E6720EB102F00607CAD /* GeometryFighter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1815E9220EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighter" */;
+			buildPhases = (
+				C1815E6420EB102F00607CAD /* Sources */,
+				C1815E6520EB102F00607CAD /* Frameworks */,
+				C1815E6620EB102F00607CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeometryFighter;
+			productName = GeometryFighter;
+			productReference = C1815E6820EB102F00607CAD /* GeometryFighter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1815E7D20EB103100607CAD /* GeometryFighterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1815E9520EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighterTests" */;
+			buildPhases = (
+				C1815E7A20EB103100607CAD /* Sources */,
+				C1815E7B20EB103100607CAD /* Frameworks */,
+				C1815E7C20EB103100607CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1815E8020EB103100607CAD /* PBXTargetDependency */,
+			);
+			name = GeometryFighterTests;
+			productName = GeometryFighterTests;
+			productReference = C1815E7E20EB103100607CAD /* GeometryFighterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1815E8820EB103100607CAD /* GeometryFighterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1815E9820EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighterUITests" */;
+			buildPhases = (
+				C1815E8520EB103100607CAD /* Sources */,
+				C1815E8620EB103100607CAD /* Frameworks */,
+				C1815E8720EB103100607CAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1815E8B20EB103100607CAD /* PBXTargetDependency */,
+			);
+			name = GeometryFighterUITests;
+			productName = GeometryFighterUITests;
+			productReference = C1815E8920EB103100607CAD /* GeometryFighterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1815E6020EB102F00607CAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "zhangyw@yhyvr.com";
+				TargetAttributes = {
+					C1815E6720EB102F00607CAD = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C1815E7D20EB103100607CAD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C1815E6720EB102F00607CAD;
+					};
+					C1815E8820EB103100607CAD = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C1815E6720EB102F00607CAD;
+					};
+				};
+			};
+			buildConfigurationList = C1815E6320EB102F00607CAD /* Build configuration list for PBXProject "GeometryFighter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1815E5F20EB102F00607CAD;
+			productRefGroup = C1815E6920EB102F00607CAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1815E6720EB102F00607CAD /* GeometryFighter */,
+				C1815E7D20EB103100607CAD /* GeometryFighterTests */,
+				C1815E8820EB103100607CAD /* GeometryFighterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1815E6620EB102F00607CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1815EAF20EB1CB000607CAD /* spark.png in Resources */,
+				C1815E6E20EB102F00607CAD /* GeometryFighter.scnassets in Resources */,
+				C1815E7820EB103000607CAD /* LaunchScreen.storyboard in Resources */,
+				C1815EB020EB1CB000607CAD /* Tail.scnp in Resources */,
+				C1815E7520EB103000607CAD /* Assets.xcassets in Resources */,
+				C1815EB220EB23FF00607CAD /* Explode.scnp in Resources */,
+				C1815E7320EB102F00607CAD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E7C20EB103100607CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E8720EB103100607CAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1815E6420EB102F00607CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1815E7020EB102F00607CAD /* GameViewController.swift in Sources */,
+				C1815EA920EB143500607CAD /* Generics.swift in Sources */,
+				C1815EA620EB143500607CAD /* UIColor+Extensions.swift in Sources */,
+				C1815EA520EB143500607CAD /* Int+Extensions.swift in Sources */,
+				C1815EAB20EB143500607CAD /* Double+Extensions.swift in Sources */,
+				C1815E9C20EB123600607CAD /* ShapeType.swift in Sources */,
+				C1815EA820EB143500607CAD /* SCNAction+Extensions.swift in Sources */,
+				C1815E6C20EB102F00607CAD /* AppDelegate.swift in Sources */,
+				C1815EAA20EB143500607CAD /* Float+Extensions.swift in Sources */,
+				C1815EA720EB143500607CAD /* GameHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E7A20EB103100607CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1815E8320EB103100607CAD /* GeometryFighterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1815E8520EB103100607CAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1815E8E20EB103100607CAD /* GeometryFighterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1815E8020EB103100607CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1815E6720EB102F00607CAD /* GeometryFighter */;
+			targetProxy = C1815E7F20EB103100607CAD /* PBXContainerItemProxy */;
+		};
+		C1815E8B20EB103100607CAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1815E6720EB102F00607CAD /* GeometryFighter */;
+			targetProxy = C1815E8A20EB103100607CAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1815E7120EB102F00607CAD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1815E7220EB102F00607CAD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1815E7620EB103000607CAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1815E7720EB103000607CAD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1815E9020EB103100607CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1815E9120EB103100607CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1815E9320EB103100607CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1815E9420EB103100607CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1815E9620EB103100607CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeometryFighter.app/GeometryFighter";
+			};
+			name = Debug;
+		};
+		C1815E9720EB103100607CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeometryFighter.app/GeometryFighter";
+			};
+			name = Release;
+		};
+		C1815E9920EB103100607CAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeometryFighter;
+			};
+			name = Debug;
+		};
+		C1815E9A20EB103100607CAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QXJB9XPNQ5;
+				INFOPLIST_FILE = GeometryFighterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yhyvr.com.GeometryFighterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeometryFighter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1815E6320EB102F00607CAD /* Build configuration list for PBXProject "GeometryFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1815E9020EB103100607CAD /* Debug */,
+				C1815E9120EB103100607CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1815E9220EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1815E9320EB103100607CAD /* Debug */,
+				C1815E9420EB103100607CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1815E9520EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1815E9620EB103100607CAD /* Debug */,
+				C1815E9720EB103100607CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1815E9820EB103100607CAD /* Build configuration list for PBXNativeTarget "GeometryFighterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1815E9920EB103100607CAD /* Debug */,
+				C1815E9A20EB103100607CAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1815E6020EB102F00607CAD /* Project object */;
+}
